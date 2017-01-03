@@ -1,5 +1,5 @@
 {
-  "name": "qtk-helloworld",
+  "name": "hello-qtk",
   "version": "1.0.0",
   "description": "qtk hello world.",
   "main": "js/index.js",
@@ -13,17 +13,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qtoolkit/qtk-helloworld.git"
+    "url": "git+https://github.com/qtoolkit/hello-qtk.git"
   },
   "keywords": [
-    "qtk-helloworld"
+    "hello-qtk"
   ],
   "author": "xianjimli@hotmail.com",
   "license": "LGPL-2.1",
   "bugs": {
-    "url": "https://github.com/qtoolkit/qtk-helloworld/issues"
+    "url": "https://github.com/qtoolkit/hello-qtk/issues"
   },
-  "homepage": "https://github.com/qtoolkit/qtk-helloworld#readme",
+  "homepage": "https://github.com/qtoolkit/hello-qtk#readme",
   "devDependencies": {
     "karma": "^1.1.2",
     "karma-chrome-launcher": "^1.0.1",
