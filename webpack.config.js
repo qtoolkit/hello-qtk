@@ -8,7 +8,7 @@ module.exports = {
   },
   output: {
     path: '',
-    filename: '[name].js',
+    filename: 'www/[name].js',
     library: libraryName
   },
   resolve: {

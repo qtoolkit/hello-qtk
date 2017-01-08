@@ -8,8 +8,8 @@ var qtk_1 = require("qtk");
 var main_model_1 = require("./models/main-model");
 var main_window_1 = require("./views/main-window");
 var main_view_model_1 = require("./view-models/main-view-model");
-var appThemeDataURL = "https://qtoolkit.github.io/qtk-todo-mvc/assets/theme/default/theme.json";
-var themeDataURL = "https://qtoolkit.github.io/demos/assets/theme/default/theme.json";
+var appThemeDataURL = "https://qtoolkit.github.io/qtk-todo-mvc/assets/theme/default/theme.js";
+var themeDataURL = "https://qtoolkit.github.io/demos/assets/theme/default/theme.js";
 var App = (function (_super) {
     __extends(App, _super);
     function App() {
@@ -21,8 +21,11 @@ var App = (function (_super) {
     };
     App.run = function () {
         var app = new App("hello world");
-        app.init({ sysThemeDataURL: themeDataURL, appThemeDataURL: appThemeDataURL });
-        app.run();
+        var assetsURLs = [themeDataURL, appThemeDataURL];
+        app.preload(assetsURLs, function () {
+            app.init({ sysThemeDataURL: themeDataURL, appThemeDataURL: appThemeDataURL });
+            app.run();
+        });
         return app;
     };
     return App;
