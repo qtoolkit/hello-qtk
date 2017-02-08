@@ -11,7 +11,7 @@ export class MainWindow extends WindowNormal {
 
 		var label = Label.create({
 			dataBindingRule:"title",
-			layoutParam :SimpleLayouterParam.create({x:"center", y:"middle", w:"100", h:"90"})
+			layoutParam :SimpleLayouterParam.create("center", "middle", "100", "90")
 		});
 
 		this.addChild(label);

@@ -16,7 +16,7 @@ var MainWindow = (function (_super) {
         this.childrenLayouter = qtk_1.SimpleLayouter.create();
         var label = qtk_2.Label.create({
             dataBindingRule: "title",
-            layoutParam: qtk_1.SimpleLayouterParam.create({ x: "center", y: "middle", w: "100", h: "90" })
+            layoutParam: qtk_1.SimpleLayouterParam.create("center", "middle", "100", "90")
         });
         this.addChild(label);
         this.bindData(this.viewModel);
